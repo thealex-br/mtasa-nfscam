@@ -99,6 +99,7 @@ function cursorMove(_, _, ax, ay)
     rotY = rotY - (ay - sy / 2) * 0.2
 
     rotX = normalizeAngle(rotX)
+    rotY = normalizeAngle(rotY)
 
     camera.lastMove = getTickCount()
 end
